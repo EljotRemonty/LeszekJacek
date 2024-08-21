@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesjonalne usługi - "eLJot Remonty"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Resetowanie stylów */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Globalne style */
+        header {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        header ul li a:hover {
+            color: #f1c40f;
+        }
+
+        .hero {
+            width: 100%;
+            height: 350px;
+            background: url('gg-fotor-2024070211243.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero p {
+            font-size: 1.3em;
+            
+        }
+
+        .contact-info {
+            background-color: #f1c40f;
+            color: #fff;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 1.2em;
+            margin-top: -1px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #f4f4f4;
+            gap: 40px;
+        }
+
+        .service-item {
+            text-align: center;
+        }
+
+        .service-item i {
+            font-size: 7em;
+            color: #f1c40f;
+        }
+
+        .service-item p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .about {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about h2 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        .about .benefits {
+            background-color: #f1c40f;
+            padding:1px 0; 
+            font-size: 1.1em;
+            display: flex;
+            align-items:flex-start;
+        margin-right: 100px;
+            justify-content: flex-start;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .about p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .about img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 5px auto;
+}
+
+.projects img {
+    width: calc(50% - 100px); /* 50% width minus margin */
+    margin-bottom: 60px;
+}
+
+.projects img:nth-child(odd) {
+    margin-right: 100px; /* Margin only on the right for odd-numbered images */
+}
+
+.projects img:nth-child(even) {
+    margin-left: 100px; /* Margin only on the left for even-numbered images */
+
+        }
+        
+        
+        .contact {
+            background-color: #f1c40f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer .footer-info,
+        footer .footer-nav,
+        footer .footer-social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer .footer-nav ul {
+            list-style: none;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        footer .footer-nav ul li {
+            margin: 10px 0;
+        }
+
+        footer .footer-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 4em;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo%20firmamarmamr.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">O nas</a></li>
+                <li><a href="#services">Oferta</a></li>
+                <li><a href="#projects">Realizacje</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Wykańczamy stany surowe od A do Z</h1>
+        <p>eLJot Remonty - firma wykończeniowa.</p>
+    </div>
+
+    <div class="contact-info">
+        <span><i class="fas fa-phone" style="color: #808389;"></i> 513 521 253</span>
+        <span><i class="fas fa-envelope" style="color: #808389;"></i> eljot.remonty@gmail.com</span>
+    </div>
+
+    <div class="services" id="services">
+        <div class="service-item">
+            <i class="fas fa-paint-roller" style="color: #808389;"></i>
+            <p>- malowanie oraz szpachlowanie wnętrz agregatem</p>
+            <p>- tapetowanie</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-hammer" style="color: #808389;"></i>
+            <p>- stawianie ścianek działowych z płyt gipsowych</p>
+            <p>- docieplanie poddasza wełną mineralną wraz z wykończeniem</p>
+            <p>- zabudowy kartonowo-gipsowe oraz podwieszane sufity</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-tools" style="color: #808389;"></i>
+            <p>- układanie paneli, desek wraz z listwami</p>
+            <p>- układanie płytek łazienkowych, kuchennych, salonowych, schody, kotłowanie i garaże</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-wrench" style="color: #808389;"></i>
+            <p>- przeróbki hydrauliczne</p>
+            <p>- elektryka</p>
+            <p>- montowanie drzwi</p>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>Firma budowlana eLJot Remonty świadczy kompleksowe usługi ogólnobudowlane</h2>
+        <p>Nasza firma już od 8 lat wykańcza wnętrza i stany surowe</p>
+         <p>- Nasze zalety:</p> 
+        <div class="benefits">
+             
+           
+            <p>- Doświadczenie</p>
+            <p>- Fachowość</p>
+            <p>- Punktualność</p>
+            <p>- Rzetelność </p>
+            <p>- I wiele więcej</p>
+        </div>
+
+        
+        
+    </div>
+
+    <div class="projects" id="projects">
+        <img src="zcj%20ie%202.png" alt="Projekt 1">
+        <img src="zdj%201.png" alt="Projekt 2">
+        <img src="zdjj%2045.png" alt="Projekt 1">
+        <img src="zcj%20ie%202.png" alt="Projekt 2">
+         
+    </div>
+
+    <div class="contact" id="contact">
+        <p><span><i class="fas fa-phone" style="color: #808389;"></i> Skontaktuj się z nami +48 513 521 253</span></p>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <img src="logo%20firmamarmamr.png" alt="Logo" height="60">
+            <p>Czajkowa 181, 39-332 Tuszów Narodowy</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#home">Strona główna</a></li>
+                <li><a href="#services">Oferta</a></li>
+                <li><a href="#projects">Realizacje</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/eLJot.remonty"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 eLJot Remonty. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
